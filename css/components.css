@@ -1,0 +1,161 @@
+/* 2014 MIT License by Mat Sitka  */
+/* Created by Mat Caissy | https://twitter.com/matsitka */
+/* http://matsitka.com */
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    background: #E0F4D0;
+    color: #555352;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    cursor: default;
+}
+
+
+p{
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 72.5em;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column, .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+    width:100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    padding: 15px 0 15px 0;
+    background: #EFF7E9;
+    width: 100%;
+    float: left;
+}
+
+header p{
+    margin-bottom:0;
+}
+
+header .logo{
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.center{text-align: center}
+
+#sitka {
+    background: #E0F4D0;
+    padding:30px 0 100px 0;
+    width:100%;
+    float:left;
+}
+
+#sitka .three{
+    width:100%;
+}
+
+#sitka .three ul{
+    width:100%;
+    padding-left: 40px;
+}
+
+#sitka .three ul li{
+    display:inline-block;
+    width:31%;
+    margin-right:15px;
+    margin-bottom: 40px;
+}
+
+.note{
+    width:50%;
+    margin:auto;
+    padding:2px;
+    background:#EFF7E9;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.note p {
+    margin-bottom: 0;
+}
+
+.note ul{
+    padding:0;
+    margin:0;
+    margin-top:5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.note li{
+    display:inline-block;
+    padding-right:15px;
+}
+
+.note li:last-child{
+    padding-right:0;
+}
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+    #sitka .three ul li {
+        width: 100%;
+    }
+
+    #sitka .three ul{
+        width: 100%;
+        padding:0;
+    }
+
+    .note{
+        width:100%;
+    }
+
+    .note li{
+        margin-bottom: 10px;
+    }
+
+}

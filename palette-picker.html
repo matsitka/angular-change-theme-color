@@ -1,0 +1,11 @@
+<div class="palette-picker-container">
+	<div class="palette-picker-initial" ng-click="togglePicker()">Choose color palette<span class="down-arrow">&#x25BE;</span></div>
+	<ul class="palette-choice-list" ng-show="pickerVisible">
+		<li ng-repeat="choice in choices" class="palette-choice" ng-click="choosePalette(choice)">
+            <span class="color-preview" style="background-color:{{choice.header}};"></span>
+            <span class="color-preview" style="background-color:{{choice.background}};"></span>
+			<span class="color-preview" style="background-color:{{choice.text}};"></span>
+			<span class="color-preview" style="background-color:{{choice.link}};"></span>
+		</li>
+	</ul>
+</div>

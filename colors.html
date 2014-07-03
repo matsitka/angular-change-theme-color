@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Change theme with color palette picker directive with AngularJS">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="@matsitka">
+    <meta property="twitter:creator" content="@matsitka">
+    <meta property="twitter:url" content="http://matsitka.com">
+    <meta property="twitter:title" content="UI designer and web developer / Mat Caissy">
+    <meta property="twitter:description" content="Hi! I'm Mat Sitka, a UI designer and web developer from Vancouver, BC. I love crafting websites and web apps for remarkable people. Also planting trees, many trees.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UI designer and web developer / Mat Caissy">
+    <meta property="og:image" content="http://matsitka.com/static/img/sitka_logo_fb.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:description" content="Hi! I'm Mat Sitka, a UI designer and web developer from Vancouver, BC. I love crafting websites and web apps for remarkable people. Also planting trees, many trees.">      <meta property="og:url" content="http://matsitka.com">
+    <meta property="og:site_name" content="Mat Sitka / Vancouver, BC">
+    <title>Mat Sitka — Color Palette Picker Directive with AngularJS</title>
+
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/modernizr.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/app.js"></script>
+
+
+  </head>
+
+<body ng-app="app" ng-controller="MainCtrl">
+
+<header ng-style="{'background': colorChoice.header}">
+    <div class="row">
+        <div class="columns">
+            <a href="http://matsitka.com" title="Mat Sitka Home"><img class="logo" src="img/matsitka-logo.png"> </a>
+            <p><strong>Change Theme</strong></p>
+            <br>
+            <palette-picker class="center" choices="colorChoices" choice="colorChoice"></palette-picker>
+        </div>
+    </div>
+</header>
+
+<div id="sitka" ng-style="{'background': colorChoice.background}">
+    <div class="row">
+        <div class="columns">
+
+            <div class="three">
+                <ul>
+                    <li><p ng-style="{'color': colorChoice.text}">This is the the preview box where I show off my <a href="#" ng-style="{'color' : colorChoice.link};">selected styles</a>. Pretty neat, huh?
+                        Chocolate bar candy lemon drops marzipan cheesecake donut halvah. Sweet roll wafer lemon drops jelly pudding cake. Caramels toffee jelly-o donut gummies chocolate bar lemon drops marzipan. Tiramisu applicake macaroon croissant croissant tootsie roll chupa chups bear  <a href="#" ng-style="{'color' : colorChoice.link};">selected styles</a> claw. Pie pastry wafer wafer. Jelly danish topping. Chocolate bear claw sweet roll pie jelly-o chupa chups chupa chups. Powder tart jelly muffin cupcake danish chocolate cake marzipan cheesecake. Souffle bear claw candy canes sweet jelly icing bear claw. Bear claw tart chocolate bar applicake apple pie chupa chups bonbon.</p></li>
+                    <li><p ng-style="{'color': colorChoice.text}">This is the the preview box where I show off my <a href="#" ng-style="{'color' : colorChoice.link};">selected styles</a>. Pretty neat, huh?
+                        Chocolate bar candy lemon drops marzipan cheesecake donut halvah. Sweet roll wafer lemon drops jelly pudding cake. Caramels toffee jelly-o donut gummies chocolate bar lemon drops marzipan. Tiramisu applicake macaroon croissant croissant tootsie roll chupa chups bear  <a href="#" ng-style="{'color' : colorChoice.link};">selected styles</a> claw. Pie pastry wafer wafer. Jelly danish topping. Chocolate bear claw sweet roll pie jelly-o chupa chups chupa chups. Powder tart jelly muffin cupcake danish chocolate cake marzipan cheesecake. Souffle bear claw candy canes sweet jelly icing bear claw. Bear claw tart chocolate bar applicake apple pie chupa chups bonbon.</p></li>
+                    <li><p ng-style="{'color': colorChoice.text}">This is the the preview box where I show off my <a href="#" ng-style="{'color' : colorChoice.link};">selected styles</a>. Pretty neat, huh?
+                        Chocolate bar candy lemon drops marzipan cheesecake donut halvah. Sweet roll wafer lemon drops jelly pudding cake. Caramels toffee jelly-o donut gummies chocolate bar lemon drops marzipan. Tiramisu applicake macaroon croissant croissant tootsie roll chupa chups bear  <a href="#" ng-style="{'color' : colorChoice.link};">selected styles</a> claw. Pie pastry wafer wafer. Jelly danish topping. Chocolate bear claw sweet roll pie jelly-o chupa chups chupa chups. Powder tart jelly muffin cupcake danish chocolate cake marzipan cheesecake. Souffle bear claw candy canes sweet jelly icing bear claw. Bear claw tart chocolate bar applicake apple pie chupa chups bonbon.</p></li>
+                </ul>
+            </div>
+
+            <div class="note" ng-style="{'background': colorChoice.header}">
+                <p class="center">Color Palette Picker Directive with AngularJS<br> ♦ ♦ ♦</p>
+
+                    <ul>
+                        <li>Made by <a href="http://matsitka.com"  ng-style="{'color' : colorChoice.link};">@matsitka</a></li>
+                        <li>Directive by <a href="http://www.mattthered.com/post/57666365894/color-palette-picker-directive-with-angularjs" ng-style="{'color' : colorChoice.link};">Matthew Moore</a></li>
+                        <li>View this project on <a href="#" ng-style="{'color' : colorChoice.link};"> Github</a></li>
+                    </ul>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+  </body>
+</html>
