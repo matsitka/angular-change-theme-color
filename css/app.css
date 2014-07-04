@@ -1,19 +1,14 @@
-/* 2014 MIT License by Mat Sitka  */
-/* Created by Mat Caissy | https://twitter.com/matsitka */
-/* http://matsitka.com */
-
-
 .preview-box {
-  width: 300px;
-  border: 3px solid #ccc;
-  padding:10px;
-  margin-top:5px;
+	width: 300px;
+	border: 3px solid #ccc;
+	padding:10px;
+	margin-top:5px;
 
 }
 
 .palette-picker-container {
 	width: 200px;
-    margin:auto;
+	margin:auto;
 }
 .palette-picker-initial {
 	background-color: #F8F8F8;
@@ -21,7 +16,6 @@
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border: 1px solid #ccc;
-
 	padding: 5px 7px 5px 7px;
 	background-color:#fff;
 }
@@ -38,9 +32,9 @@
 }
 
 .palette-choice-list {
-  list-style-type: none;
-  padding:0;
-  margin:0;
+  	list-style-type: none;
+  	padding:0;
+        margin:0;
 	width: inherit;
 	z-index: 999;
 	position: absolute;
@@ -51,7 +45,6 @@
 	background-color: #fff;
 	border: 1px solid #ccc;
 	background-color: #F8F8F8;
-
 	line-height:0;
 }
 
